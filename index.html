@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Desenvolvedor Front End & UX/UI Designer">
+  <title>Portfólio</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./favicon.svg" type="svg+xml">
+  <!-- Fontes do google fonts (Firasans)-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Incluir ícones github e linkedin -->
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <img src="./img/logo-tech.png" alt="Logo" width="64" height="64">
+    <nav>
+      <ul class="header-menu">
+        <li><a href="#experiencia">Experiência</a></li> <!-- Link interno -->
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#contato">Contato</a></li>      
+      </ul>
+    </nav>
+  </header>
+
+  <main class="introducao">
+    <img src="./img/perfil.jpg" alt="Lobo Cinza" width="360" height="520">
+    <!-- width e height acima são para otimização do site. Possuem metade do valor de width e height da imagem que usei -->
+    <div>
+      <h1>Desenvolvedor<br>Front End</h1> <!-- br é uma tag de quebra, não precisa abrir e fechar -->
+      <p>Localizado em Belo Horizonte - MG 🔺</p>
+    </div>
+  </main>
+
+  <section class="experiencia" id="experiencia" aria-label="Experiência"> <!-- arial-label = ponto de referencia da section 
+  id = ao clicar na opção experiencia na nav, a tela vai pra parte de experiencia. precisa do #experiencia na li da nav-->
+    <h2 class="subtitulo">Experiência</h2>
+    <div>
+      <p class="experiencia-texto">Desenvolvo pequenos projetos utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e <strong>Javascript</strong>. Para aplicativos web trabalho no <strong>UX</strong> e <strong>UI Design</strong> do projeto.</p>
+        
+      <div class="empresa">
+        <span class="empresa-ano">2045</span> <!-- span para não quebrar estrutura de 2 colunas -->
+        <h3 class="empresa-titulo">Empresa C</h3>
+        <span class="empresa-titulo">Desenvolvedor Júnior</span>
+        <p class="empresa-texto">No projeto Android eu trabalhei no desenvolvimento completo do HTML, CSS e Javascript do site. Além disso, também prestei consultoria no Design.</p>
+        <ul class="empresa-habilidades">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>UX Design</li>
+          <li>UI Design</li>
+        </ul>
+      </div>
+      
+      <div class="empresa">
+        <span class="empresa-ano">2044-45</span> <!-- span para não quebrar estrutura de 2 colunas -->
+        <h3 class="empresa-titulo">Empresa B</h3>
+        <span class="empresa-titulo">Estagiário</span>
+        <p class="empresa-texto">No projeto Android eu trabalhei no desenvolvimento completo do HTML, CSS e Javascript do site.</p>
+        <ul class="empresa-habilidades">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+      
+      <div class="empresa">
+        <span class="empresa-ano">2044</span> <!-- span para não quebrar estrutura de 2 colunas -->
+        <h3 class="empresa-titulo">Empresa A</h3>
+        <span class="empresa-titulo">Freelancer</span>
+        <p class="empresa-texto">Mais de 3 projetos foram desenvolvidos na empresa Microsoft. Eu trabalhei na criação do email marketing e também no HTML.</p>
+        <ul class="empresa-habilidades">
+          <li>Email Marketing</li>
+          <li>HTML</li>
+          <li>UX Design</li>
+          <li>UI Design</li>
+        </ul>
+      </div>
+    </div>   
+  </section>
+
+  <section class="formacao" id="formacao" aria-label="Formação">
+    <div class="formacao-container"> <!-- div serve para manter fundo colorido mesmo ampliando além dos 1200px -->
+      <h2 class="subtitulo">Formação</h2>
+
+      <div>
+        <p class="formacao-texto">
+          Minha mais recente experiência acadêmica foi o <strong>mestrado</strong> que fiz no exterior em <strong>UX Design</strong>. Além disso me mantenho sempre atualizado com cursos intensivos online.
+        </p>
+
+        <ul class="faculdade-lista">
+          <li class="faculdade">
+            <span class="faculdade-tipo">Bacharelado</span>
+            <h3 class="faculdade-curso">Administração de Empresas</h3>
+            <span class="faculdade-instituicao">PUC Minas</span>
+          </li>
+          
+          <li class="faculdade">
+            <span class="faculdade-tipo">Tecnólogo</span>
+            <h3 class="faculdade-curso">Desenvolvimento Web</h3>
+            <span class="faculdade-instituicao">Unopar</span>
+          </li>
+          
+          <li class="faculdade">
+            <span class="faculdade-tipo">Mestrado</span>
+            <h3 class="faculdade-curso">User Experience Design</h3>
+            <span class="faculdade-instituicao">Harvard</span>
+          </li>
+        </ul>
+
+        <div class="formacao-extra">
+          <div class="cursos">
+            <h3>Cursos Intensivos</h3>
+            <ul>
+              <li>UX Design & UI Design <span>56 horas</span></li>
+              <li>Front End para iniciantes<span>72 horas</span></li>
+            </ul>
+          </div>
+
+          <div class="idiomas">
+            <h3>Idiomas</h3>
+            <ul>
+              <li>Inglês <span>/ Fluente</span></li>
+              <li>Espanhol <span>/ Intermediário</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- id = contato porque o href no header é #contato -->
+  <footer class="footer" id="contato">
+    <div class="footer-container">
+      <p class="footer-texto">Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa.</p>
+      <ul class="footer-contato">
+        <li>alexandremotadev@gmail.com</li>
+        <li>+55 31 99999-9999</li> 
+        <div class="footer-redes-sociais">
+          <li><a href="https://github.com/alexandremotadev" target="_blank"><i class="fa-brands fa-github fa-2x" style="color: #ededed;"></i></a> </li>
+          <li><a href="https://www.linkedin.com/in/alexandremotadev" target="_blank"><i class="fa-brands fa-linkedin fa-2x" style="color: #ededed;"></i></a></li>
+        </div>
+      </ul>
+      <p class="footer-copy">Alguns direitos reservados.</p>
+    </div>
+  </footer>  
+</body>
+</html>

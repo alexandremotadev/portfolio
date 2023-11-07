@@ -1,0 +1,43 @@
+/* Reset de estilos, modificação do body e reutilização de classes*/
+body {
+  font-family: 'Fira Sans', Arial, sans-serif;
+  margin: 0px;
+  color: #141414;
+}
+
+h1, h2, h3, p {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto; /* definido automaticamente de acordo com o valor da largura, não esmagando a imagem */
+}
+
+/* subtitulo é uma classe que vou reaproveitar, por isso está no global*/
+.subtitulo {
+  font-size: 8rem;
+  word-break: break-all; /* quebrar palavra */
+  line-height: 1; /* altura da linha */
+  text-transform: uppercase; /* letra maiuscula */
+  max-width: 4ch; /* valor do caractere 0 = vai tentar quebrar palavra deixando 4 letras em cada linha */
+}
+
+@media (max-width: 800px) {
+  .subtitulo {
+    font-size: 3rem;
+    text-transform: capitalize; /* aumenta somente a primeira letra*/
+    max-width: initial !important;
+    /* !important serve para escrever sobre qualquer valor que vier na frente, em outros arquivos css*/
+  }
+
+}
+
+
