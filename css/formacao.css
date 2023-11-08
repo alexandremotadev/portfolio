@@ -15,23 +15,13 @@
 }
 
 /* subtitulo dentro de formacao */
-.formacao .subtitulo {
-  color: #000000;
-  max-width: 5ch;
-}
-
-/* copiado de .experiencia */
-.formacao-texto {
-  font-size: 1.5rem;
-  line-height: 1.33;
-  max-width: 40ch; /* não expandir o texto ao aumentar a tela*/
-  margin-bottom: 60px;
-  color: #a3a3a3;
-}
-
-/* strong dentro de texto dentro de formacao */
-.formacao .texto strong {
-  color: #ffffff;
+.subtitulo-formacao {
+  color: white;
+  grid-column: 1 / -1;
+  padding-bottom: 40px;
+  font-size: 4rem;
+  line-height: 1; /* altura da linha */
+  text-transform: uppercase; /* letra maiuscula */
 }
 
 /* display flex: uma lista de curso do lado da outra

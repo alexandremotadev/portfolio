@@ -46,7 +46,7 @@
 .introducao-contato a {
   text-decoration: none;
   color: #525252;
-  border:2px solid #525252;
+  border:2px solid rgba(255, 0, 0, 0.897);
   border-radius: 4px;
   padding: 10px;  
 }
