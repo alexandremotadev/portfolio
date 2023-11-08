@@ -13,7 +13,6 @@ body {
   font-family: 'Fira Sans', Arial, sans-serif;
   margin: 0px;
   color: #141414;
-
 }
 
 h1, h2, h3, p {
@@ -48,6 +47,10 @@ a:hover{
 
 .botoes-titulos {
   color: red;
+}
+
+.marca-alexandre {
+  font-size: 2rem; 
 }
 
 @media (max-width: 800px) {
