@@ -1,28 +1,33 @@
-.experiencia {
+.projetos {
   max-width: 1200px;
   padding: 40px 20px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 100px
+  display: grid;   
 }
 
 /* altera somente o subtitulo dentro de experiencia */
-.experiencia .subtitulo {
-  color: #e0e0e0;
-}
-
-.experiencia-texto {
-  font-size: 1.5rem;
-  line-height: 1.33;
-  max-width: 40ch; /* não expandir o texto ao aumentar a tela*/
-  margin-bottom: 60px;
-  color: #525252;
+.projetos .subtitulo-projetos {
+  color: black;
+  grid-column: 1 / -1;
+  padding-bottom: 40px;
+  font-size: 4rem;
+  line-height: 1; /* altura da linha */
+  text-transform: uppercase; /* letra maiuscula */
+  max-width: 4ch; /* valor do caractere 0 = vai tentar quebrar palavra deixando 4 letras em cada linha */
 }
 
 /* preto máximo no strong */
-.experiencia-texto strong {
+.projetos-texto strong {
   color: #141414;
+}
+
+.projetos-divisoes {
+  display: grid;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 .empresa {
@@ -87,16 +92,74 @@
   padding: 5px 10px;
 }
 
+.conteudo-projetos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px; /* tamanho máximo do conteúdo. alinha itens ao centro junto com justify do body, depois de passar 1000px */
+}
+
+#label-introducao {
+
+}
+
+.introducao-projetos h1 {
+  font-size: 2rem;
+}
+
+.introducao-projetos {
+  background: var(--fundo-2);
+  padding: 40px;
+  text-align: right;
+  position: relative; /* serve apenas para posicionar o detalhe */
+  display: grid;
+  align-content: center; /* alinhar texto em relação a img*/
+  gap: 20px;
+  justify-items: end; /* alinhar itens na ponta */
+}
+
+.introducao-projetos h1 {
+  font-size: 2rem;
+}
+
+.introducao-projetos::before {
+  content:''; /* pseudoelement precisa ter conteudo para existir */
+  width: 60px;
+  height: 4px;
+  background: var(--cor-primaria);
+  position: absolute;
+  top: 30px; /* com a introducao position relative, esses 30px são contados a partir do topo da div introducao */
+  right: -30px;
+}
+
+.botao-projetos {
+  background: var(--cor-primaria);
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.botao-projetos:hover {
+  background: var(--cor-primaria-escura);
+  border: none;
+}
+
+article {
+  padding-top: 50px;
+}
+
+/* Responsividade */
+
 @media (max-width: 800px) {
-  .experiencia {
+  .projetos {
     grid-template-columns: 1fr;
     gap: 40px;
   }
-  .experiencia .subtitulo {
+  .projetos .subtitulo {
     color: #141414;
     font-size: 2rem;    
   }
-  .experiencia-texto {
+  .projetos-texto {
     font-size: 1.25rem;
   }
   .empresa-ano {
@@ -112,3 +175,5 @@
     grid-template-columns: 1fr;
   }
 }
+
+

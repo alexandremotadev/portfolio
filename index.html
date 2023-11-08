@@ -20,7 +20,7 @@
     <img src="./img/logo-tech.png" alt="Logo" width="64" height="64">
     <nav>
       <ul class="header-menu">
-        <li><a href="#experiencia">Experiência</a></li> <!-- Link interno -->
+        <li><a href="#projetos">Projetos</a></li> <!-- Link interno -->
         <li><a href="#formacao">Formação</a></li>
         <li><a href="#contato">Contato</a></li>      
       </ul>
@@ -32,54 +32,104 @@
     <!-- width e height acima são para otimização do site. Possuem metade do valor de width e height da imagem que usei -->
     <div>
       <h1>Desenvolvedor<br>Front End</h1> <!-- br é uma tag de quebra, não precisa abrir e fechar -->
-      <p>Localizado em Belo Horizonte - MG 🔺</p>
+      <p>Sou um Desenvolvedor Front End apaixonado em transformar ideias em realidade, combinando habilidades técnicas e criatividade. Estou sempre em busca de aperfeiçoar minhas habilidades e trabalhar em projetos desafiadores. Meu objetivo é aprender e crescer na área. Principais tecnologias: <strong>HTML, CSS, JavaScript e React JS</strong>.</p>
+      <div class="introducao-redes-sociais">
+        <ul class="introducao-contato">
+          <li><a href="/" target="_blank">Currículo</a></li>
+          <li><a href="https://github.com/alexandremotadev" target="_blank">Github</a> </li>
+          <li><a href="https://www.linkedin.com/in/alexandremotadev" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
     </div>
   </main>
 
-  <section class="experiencia" id="experiencia" aria-label="Experiência"> <!-- arial-label = ponto de referencia da section 
-  id = ao clicar na opção experiencia na nav, a tela vai pra parte de experiencia. precisa do #experiencia na li da nav-->
-    <h2 class="subtitulo">Experiência</h2>
-    <div>
-      <p class="experiencia-texto">Desenvolvo pequenos projetos utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e <strong>Javascript</strong>. Para aplicativos web trabalho no <strong>UX</strong> e <strong>UI Design</strong> do projeto.</p>
-        
-      <div class="empresa">
-        <span class="empresa-ano">2045</span> <!-- span para não quebrar estrutura de 2 colunas -->
-        <h3 class="empresa-titulo">Empresa C</h3>
-        <span class="empresa-titulo">Desenvolvedor Júnior</span>
-        <p class="empresa-texto">No projeto Android eu trabalhei no desenvolvimento completo do HTML, CSS e Javascript do site. Além disso, também prestei consultoria no Design.</p>
-        <ul class="empresa-habilidades">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>UX Design</li>
-          <li>UI Design</li>
-        </ul>
-      </div>
-      
-      <div class="empresa">
-        <span class="empresa-ano">2044-45</span> <!-- span para não quebrar estrutura de 2 colunas -->
-        <h3 class="empresa-titulo">Empresa B</h3>
-        <span class="empresa-titulo">Estagiário</span>
-        <p class="empresa-texto">No projeto Android eu trabalhei no desenvolvimento completo do HTML, CSS e Javascript do site.</p>
-        <ul class="empresa-habilidades">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-        </ul>
-      </div>
-      
-      <div class="empresa">
-        <span class="empresa-ano">2044</span> <!-- span para não quebrar estrutura de 2 colunas -->
-        <h3 class="empresa-titulo">Empresa A</h3>
-        <span class="empresa-titulo">Freelancer</span>
-        <p class="empresa-texto">Mais de 3 projetos foram desenvolvidos na empresa Microsoft. Eu trabalhei na criação do email marketing e também no HTML.</p>
-        <ul class="empresa-habilidades">
-          <li>Email Marketing</li>
-          <li>HTML</li>
-          <li>UX Design</li>
-          <li>UI Design</li>
-        </ul>
-      </div>
+  <section class="projetos" id="projetos" aria-label="Projetos"> 
+    <!-- arial-label = ponto de referencia da section id = ao clicar na opção experiencia na nav, a tela vai pra parte de experiencia. precisa do #experiencia na li da nav -->
+    <h2 class="subtitulo-projetos">Projetos</h2>
+    <div class="projetos-divisoes">      
+      <article class="conteudo-projetos" aria-labelledby="label-introducao">
+        <div class="introducao-projetos"> <!-- 1° linha 1° coluna -->
+          <h1 id="label-introducao">Barbershop</h1>
+          <p>Projeto de barbebaria.</p>
+          <div>
+            <ul class="empresa-habilidades">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul> 
+          </div>
+          <div>
+            <ul class="introducao-contato">              
+              <li><a href="https://github.com/alexandremotadev" target="_blank">Site</a> </li>
+              <li><a href="https://github.com/alexandremotadev" target="_blank">Código</a></li>
+            </ul>
+          </div>        
+        </div>  
+        <img src="./img/barbershop.jpg" alt="Landing Page de Barbearia"> <!-- 1° linha 2° coluna -->
+      </article>
+
+      <article class="conteudo-projetos" aria-labelledby="label-introducao">
+        <img src="./img/cafeteria.jpg" alt="Landing Page de Barbearia"><!-- 1° linha 2° coluna -->
+        <div class="introducao-projetos"> <!-- 1° linha 1° coluna -->          
+          <h1 id="label-introducao">Café Plus</h1>          
+          <p>Projeto de cafeteria.</p>
+          <div>
+            <ul class="empresa-habilidades">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul> 
+          </div>
+          <div>
+            <ul class="introducao-contato">              
+              <li><a href="https://github.com/alexandremotadev" target="_blank">Site</a> </li>
+              <li><a href="https://github.com/alexandremotadev" target="_blank">Código</a></li>
+            </ul>
+          </div>        
+        </div>                 
+      </article>
+
+      <article class="conteudo-projetos" aria-labelledby="label-introducao">
+        <div class="introducao-projetos"> <!-- 1° linha 1° coluna -->
+          <h1 id="label-introducao">Sorriso Novo</h1>
+          <p>Projeto de consultório odontológico.</p>
+          <div>
+            <ul class="empresa-habilidades">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul> 
+          </div>
+          <div>
+            <ul class="introducao-contato">              
+              <li><a href="https://github.com/alexandremotadev" target="_blank">Site</a> </li>
+              <li><a href="https://github.com/alexandremotadev" target="_blank">Código</a></li>
+            </ul>
+          </div>        
+        </div>  
+        <img src="./img/dentista.jpg" alt="Landing Page de Barbearia"> <!-- 1° linha 2° coluna -->
+      </article>
+
+      <article class="conteudo-projetos" aria-labelledby="label-introducao">
+        <img src="./img/calculadora.png" alt="Landing Page de Barbearia"> <!-- 1° linha 2° coluna -->
+        <div class="introducao-projetos"> <!-- 1° linha 1° coluna -->
+          <h1 id="label-introducao">Calculadora</h1>
+          <p>Projeto de calculadora.</p>
+          <div>
+            <ul class="empresa-habilidades">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul> 
+          </div>
+          <div>
+            <ul class="introducao-contato">              
+              <li><a href="https://github.com/alexandremotadev" target="_blank">Site</a> </li>
+              <li><a href="https://github.com/alexandremotadev" target="_blank">Código</a></li>
+            </ul>
+          </div>        
+        </div>        
+      </article>
     </div>   
   </section>
 
@@ -132,20 +182,13 @@
       </div>
     </div>
   </section>
-
-  <!-- id = contato porque o href no header é #contato -->
+  
   <footer class="footer" id="contato">
+    <!-- id = contato porque o href no header é #contato -->
     <div class="footer-container">
-      <p class="footer-texto">Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa.</p>
-      <ul class="footer-contato">
-        <li>alexandremotadev@gmail.com</li>
-        <li>+55 31 99999-9999</li> 
-        <div class="footer-redes-sociais">
-          <li><a href="https://github.com/alexandremotadev" target="_blank"><i class="fa-brands fa-github fa-2x" style="color: #ededed;"></i></a> </li>
-          <li><a href="https://www.linkedin.com/in/alexandremotadev" target="_blank"><i class="fa-brands fa-linkedin fa-2x" style="color: #ededed;"></i></a></li>
-        </div>
-      </ul>
-      <p class="footer-copy">Alguns direitos reservados.</p>
+      <p class="footer-texto">Estou disponível para novos projetos. Entre em contato e marcamos uma conversa.</p>
+
+      <p class="footer-copy">Incluir botões de atalho para contato.</p>
     </div>
   </footer>  
 </body>

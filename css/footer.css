@@ -33,13 +33,8 @@
 .footer-copy {
   font-size: 1.125rem;
   color: #8f8f8f;
-  grid-column: 1 / -1; /* ocupar da primeira até a última coluna sem quebrar, enquanto tiver espaço */
+  grid-column: 2 / -1; /* ocupar da segunda até a última coluna sem quebrar, enquanto tiver espaço */
 }
-
-.footer-redes-sociais{  
-  display: flex;
-  gap: 20px;
- }
 
 @media (max-width: 800px) {
   .footer-container {

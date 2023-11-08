@@ -1,8 +1,19 @@
+:root {
+  --cor-primaria: #e21;
+  --cor-primaria-escura: #900;
+  --fundo-1: #f7f7f7;
+  --fundo-2: #ffffff;
+  --texto: #000000;
+  --subtitulo: rgba(0, 0, 0, 0.2);
+  --onda: url(img/onda-clara.svg); 
+}
+
 /* Reset de estilos, modificação do body e reutilização de classes*/
 body {
   font-family: 'Fira Sans', Arial, sans-serif;
   margin: 0px;
   color: #141414;
+  display: grid;
 }
 
 h1, h2, h3, p {
