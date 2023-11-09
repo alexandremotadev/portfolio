@@ -1,8 +1,8 @@
 .projetos {
   max-width: 1200px;
-  padding: 40px 20px;
+  padding: 120px 20px;
   margin: 0 auto;
-  display: grid;   
+  display: grid; 
 }
 
 /* altera somente o subtitulo dentro de experiencia */
