@@ -104,6 +104,7 @@ img {
 
 .introducao-projetos h1 {
   font-size: 2rem;
+  text-decoration: underline;
 }
 
 .introducao-projetos {
@@ -119,16 +120,6 @@ img {
 
 .introducao-projetos h1 {
   font-size: 2rem;
-}
-
-.introducao-projetos::before {
-  content:''; /* pseudoelement precisa ter conteudo para existir */
-  width: 60px;
-  height: 4px;
-  background: var(--cor-primaria);
-  position: absolute;
-  top: 30px; /* com a introducao position relative, esses 30px são contados a partir do topo da div introducao */
-  right: -30px;
 }
 
 .botao-projetos {

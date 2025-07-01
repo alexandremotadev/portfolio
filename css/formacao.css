@@ -64,7 +64,7 @@ flex-wrap:wrap, caso não caiba, quebre */
   display: block;
   width: 4px;
   height: 20px;
-  background: linear-gradient(#b6f829, #67dd0a);
+  background: linear-gradient(#ffffff, #ffffff);
   position: absolute; /* retirar detalhe de dentro da div. sem esse position ele ocupa a primeira linha da primeira coluna e joga o titulo para a primeira linha segunda coluna */  
   left: -24px; /* -20 padding e -4 do elemento */
 }
@@ -150,7 +150,7 @@ flex-wrap:wrap, caso não caiba, quebre */
   display: block;
   width: 130px;
   height: 100px;
-  background: url(../img/detalhe.svg) no-repeat center;
+  background: url(../img/detalhefinal.svg) no-repeat center;
   position: absolute;
   bottom: -50px; /* metade o height */
   left: 20px;

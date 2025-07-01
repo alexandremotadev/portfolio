@@ -1,6 +1,6 @@
 :root {
-  --cor-primaria: #e21;
-  --cor-primaria-escura: #900;
+  --cor-primaria: rgb(0, 0, 0);
+  --cor-primaria-escura: rgb(0, 0, 0);
   --fundo-1: #f7f7f7;
   --fundo-2: #ffffff;
   --texto: #000000;
@@ -33,7 +33,7 @@ img {
 
 a:hover{
   color: white !important;
-  background: rgba(255, 0, 0, 0.897);  
+  background: rgba(0, 0, 0, 0.897);  
 }
 
 /* subtitulo é uma classe que vou reaproveitar, por isso está no global*/
@@ -45,8 +45,12 @@ a:hover{
   max-width: 4ch; /* valor do caractere 0 = vai tentar quebrar palavra deixando 4 letras em cada linha */
 }
 
-.botoes-titulos {
-  color: red;
+.botoes-titulos1 {
+  color: rgb(0, 0, 0);
+}
+
+.botoes-titulos2 {
+  color: rgb(255, 255, 255);
 }
 
 .marca-alexandre {
