@@ -104,7 +104,7 @@ img {
 
 .introducao-projetos h1 {
   font-size: 2rem;
-  text-decoration: underline;
+  text-decoration: underline;  
 }
 
 .introducao-projetos {
@@ -115,7 +115,7 @@ img {
   display: grid;
   align-content: center; /* alinhar texto em relação a img*/
   gap: 20px;
-  justify-items: end; /* alinhar itens na ponta */
+  justify-items:center; /* alinhar itens na ponta */
 }
 
 .introducao-projetos h1 {
